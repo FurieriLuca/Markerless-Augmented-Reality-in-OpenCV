@@ -1,7 +1,8 @@
+# Markerless Augmented Reality in OpenCV: Augmented Cover of a Book.
 
+Original video: https://www.youtube.com/watch?v=7gzKLpqNmkk
 
-# Original video: https://www.youtube.com/watch?v=7gzKLpqNmkk
-# Augmented reality video: https://www.youtube.com/watch?v=H2nTuCUuPtA
+Augmented reality video: https://www.youtube.com/watch?v=H2nTuCUuPtA
 
 
 The "CVLAB" logo and the author "Pietro Azzari" are added as an augmented layer, which is not present in the real video.
