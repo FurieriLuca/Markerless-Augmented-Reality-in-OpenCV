@@ -19,7 +19,6 @@ while True:
         print("Please select either '1' or '2'\n")
 
 selection = int(selection)
-print(selection)
 
 while True:
     mode = input("Would you like to select F2R, F2F or the proposed hybrid approach? Type 'F2F', 'F2R' or 'H':\n " )
@@ -64,7 +63,7 @@ ret, reference = original.read()
 # Compute height, width of the images and video
 height, width, channels = reference.shape
 
-vidout = cv.VideoWriter("output.avi", fourcc, 30, (width*2, height*2))
+vidout = cv.VideoWriter("output.avi", fourcc, 30, (width*4, height*2))
 
 
 
@@ -184,7 +183,8 @@ while (original.isOpened()):
         kp_prev = kp_this
         descr_prev = descr_this
 
-        vidout.write(augmented_frame)
+
+        vidout.write(np.concatenate((augmented_frame, cv.resize(thisframe, (width * 2, height * 2))), axis=1))
 
     else:
         break
