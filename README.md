@@ -1,4 +1,4 @@
-# Markerless-Augmented-Reality-in-OpenCV
+# Markerless Augmented Reality in OpenCV
 
 Compatible with OpenCV 3.4.2.16 (SIFT class is not available in OpenCV 4)
 
